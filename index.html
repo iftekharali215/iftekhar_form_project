@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Job Application Form</title>
+<link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+<div class="container">
+  <h1>JOB APPLICATION FORM</h1>
+  <form action="#" method="post" novalidate>
+    
+    <div class="section-title">PERSONAL INFORMATION</div>
+    
+    <div class="row">
+      <div class="col-25"><label for="fname">First Name *</label></div>
+      <div class="col-75"><input type="text" id="fname" name="firstname" placeholder="Enter your first name" required></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="lname">Last Name *</label></div>
+      <div class="col-75"><input type="text" id="lname" name="lastname" placeholder="Enter your last name" required></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="dob">Date of Birth *</label></div>
+      <div class="col-75"><input type="date" id="dob" name="dob" required></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label>Gender *</label></div>
+      <div class="col-75 radio-group">
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="email">Email *</label></div>
+      <div class="col-75"><input type="email" id="email" name="email" placeholder="myemail@gmail.com" required></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="phone">Phone Number</label></div>
+      <div class="col-75"><input type="tel" id="phone" name="phone" placeholder="+91 87629 89760"></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="address">Address</label></div>
+      <div class="col-75"><textarea id="address" name="address" placeholder="Street, City, State"></textarea></div>
+    </div>
+    
+    <div class="section-title">EDUCATION DETAILS</div>
+    
+    <div class="row">
+      <div class="col-25"><label for="highestDegree">Highest Degree *</label></div>
+      <div class="col-75">
+        <select id="highestDegree" name="highestDegree" required>
+          <option value="" disabled selected>Select your highest degree</option>
+          <option value="highschool">High School</option>
+          <option value="bachelor">Bachelor's</option>
+          <option value="master">Master's</option>
+          <option value="phd">PhD</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="university">University/College</label></div>
+      <div class="col-75"><input type="text" id="university" name="university" placeholder="Name of institution"></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="graduationYear">Year of Graduation</label></div>
+      <div class="col-75"><input type="text" id="graduationYear" name="graduationYear" placeholder="e.g., 2023"></div>
+    </div>
+    
+    <div class="section-title">WORK EXPERIENCE</div>
+    
+    <div class="row">
+      <div class="col-25"><label for="experience">Years of Experience *</label></div>
+      <div class="col-75">
+        <select id="experience" name="experience" required>
+          <option value="" disabled selected>Select experience</option>
+          <option value="0">0 years</option>
+          <option value="1-2">1-2 years</option>
+          <option value="3-5">3-5 years</option>
+          <option value="6-10">6-10 years</option>
+          <option value="10+">10+ years</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="lastEmployer">Last Employer</label></div>
+      <div class="col-75"><input type="text" id="lastEmployer" name="lastEmployer" placeholder="Company name"></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="position">Last Position Held</label></div>
+      <div class="col-75"><input type="text" id="position" name="position" placeholder="Your last job title"></div>
+    </div>
+    
+    <div class="row">
+      <div class="col-25"><label for="skills">Key Skills</label></div>
+      <div class="col-75"><textarea id="skills" name="skills" placeholder="List your skills"></textarea></div>
+    </div>
+    
+    <div class="section-title">ADDITIONAL INFORMATION</div>
+    
+    <div class="row">
+      <div class="col-25"><label for="resume">Upload Resume</label></div>
+      <div class="col-75"><input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"></div>
+    </div>
+    
+    <div class="row checkbox-group">
+      <label><input type="checkbox" name="terms" required> I agree to the <a href="#">terms and conditions</a> *</label>
+    </div>
+    
+    <div class="row">
+      <input type="submit" value="Submit Application" class="submit-btn">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
